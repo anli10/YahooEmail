@@ -33,13 +33,13 @@ public class YahooMail {
     public void SendEmail(){
 
         WebElement usernameField=webDriver.findElement(By.id("login-username"));
-        usernameField.sendKeys("ghiutaanamaria");
+        usernameField.sendKeys(" ");
 
         WebElement nextButton=webDriver.findElement(By.id("login-signin"));
         nextButton.click();
 
         WebElement passwordField=webDriver.findElement(By.id("login-passwd"));
-        passwordField.sendKeys("ely1997ana");
+        passwordField.sendKeys("  ");
 
         WebElement signinButton=webDriver.findElement(By.id("login-signin"));
         signinButton.click();
@@ -48,7 +48,7 @@ public class YahooMail {
         mailButton.click();
 
         WebElement toField=webDriver.findElement(By.id("to-field"));
-        toField.sendKeys("ghiutaanamaria@yahoo.com");
+        toField.sendKeys(" ");
 
         WebElement subjectField=webDriver.findElement(By.id("subject-field"));
         subjectField.sendKeys("test");
@@ -73,7 +73,7 @@ public class YahooMail {
         WebElement fromField=webDriver.findElement(By.xpath("(//*[@class=\"from\"])[1]"));
         String name=fromField.getText();
         System.out.println(name);
-        Assert.assertEquals("ghiutaanamaria@yahoo.com",name);
+        Assert.assertEquals("",name);
 
         WebElement profileButton=webDriver.findElement(By.id("yucs-profile"));
         profileButton.click();
