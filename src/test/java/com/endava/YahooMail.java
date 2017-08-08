@@ -78,6 +78,8 @@ public class YahooMail {
         WebElement profileButton=webDriver.findElement(By.id("yucs-profile"));
         profileButton.click();
 
+        WebElement signOut=webDriver.findElement(By.id("yucs-signout"));
+        signOut.click();
     }
 
 }
